@@ -21,8 +21,10 @@ class ListTableViewController: UITableViewController, NSFetchedResultsController
         switch image{
         case #imageLiteral(resourceName: "complete"):
             item.isPurchased = false
+            CoreDataStack.saveToPersistentStore()
         case #imageLiteral(resourceName: "incomplete"):
             item.isPurchased = true
+            CoreDataStack.saveToPersistentStore()
         default:
             print("Default")
         }
