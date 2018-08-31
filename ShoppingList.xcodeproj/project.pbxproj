@@ -7,17 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8716FF302139942900A1559F /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8716FF2F2139942900A1559F /* ListTableViewController.swift */; };
+		8716FF322139959300A1559F /* ListItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8716FF312139959300A1559F /* ListItemTableViewCell.swift */; };
+		8716FF35213995DF00A1559F /* ShoppingList.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8716FF33213995DF00A1559F /* ShoppingList.xcdatamodeld */; };
+		8716FF372139964F00A1559F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8716FF362139964F00A1559F /* CoreDataStack.swift */; };
+		8716FF3D2139989500A1559F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8716FF3C2139989500A1559F /* Default-568h@2x.png */; };
+		8716FF3F2139A34000A1559F /* Item+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8716FF3E2139A34000A1559F /* Item+Convenience.swift */; };
 		87705F02213992400064042D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87705F01213992400064042D /* AppDelegate.swift */; };
-		87705F04213992400064042D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87705F03213992400064042D /* ViewController.swift */; };
 		87705F07213992400064042D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87705F05213992400064042D /* Main.storyboard */; };
 		87705F09213992410064042D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87705F08213992410064042D /* Assets.xcassets */; };
 		87705F0C213992410064042D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87705F0A213992410064042D /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8716FF2F2139942900A1559F /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		8716FF312139959300A1559F /* ListItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemTableViewCell.swift; sourceTree = "<group>"; };
+		8716FF34213995DF00A1559F /* ShoppingList.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShoppingList.xcdatamodel; sourceTree = "<group>"; };
+		8716FF362139964F00A1559F /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		8716FF3C2139989500A1559F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8716FF3E2139A34000A1559F /* Item+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+Convenience.swift"; sourceTree = "<group>"; };
 		87705EFE213992400064042D /* ShoppingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87705F01213992400064042D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		87705F03213992400064042D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		87705F06213992400064042D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87705F08213992410064042D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87705F0B213992410064042D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,9 +45,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8716FF382139984300A1559F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8716FF3E2139A34000A1559F /* Item+Convenience.swift */,
+				8716FF362139964F00A1559F /* CoreDataStack.swift */,
+				8716FF33213995DF00A1559F /* ShoppingList.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8716FF392139984A00A1559F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8716FF312139959300A1559F /* ListItemTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8716FF3A2139986C00A1559F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8716FF2F2139942900A1559F /* ListTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		8716FF3B2139987F00A1559F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				87705F01213992400064042D /* AppDelegate.swift */,
+				87705F05213992400064042D /* Main.storyboard */,
+				87705F08213992410064042D /* Assets.xcassets */,
+				87705F0A213992410064042D /* LaunchScreen.storyboard */,
+				87705F0D213992410064042D /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		87705EF5213992400064042D = {
 			isa = PBXGroup;
 			children = (
+				8716FF3C2139989500A1559F /* Default-568h@2x.png */,
 				87705F00213992400064042D /* ShoppingList */,
 				87705EFF213992400064042D /* Products */,
 			);
@@ -54,12 +103,10 @@
 		87705F00213992400064042D /* ShoppingList */ = {
 			isa = PBXGroup;
 			children = (
-				87705F01213992400064042D /* AppDelegate.swift */,
-				87705F03213992400064042D /* ViewController.swift */,
-				87705F05213992400064042D /* Main.storyboard */,
-				87705F08213992410064042D /* Assets.xcassets */,
-				87705F0A213992410064042D /* LaunchScreen.storyboard */,
-				87705F0D213992410064042D /* Info.plist */,
+				8716FF3B2139987F00A1559F /* Resources */,
+				8716FF382139984300A1559F /* Model */,
+				8716FF392139984A00A1559F /* Views */,
+				8716FF3A2139986C00A1559F /* View Controllers */,
 			);
 			path = ShoppingList;
 			sourceTree = "<group>";
@@ -123,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87705F0C213992410064042D /* LaunchScreen.storyboard in Resources */,
+				8716FF3D2139989500A1559F /* Default-568h@2x.png in Resources */,
 				87705F09213992410064042D /* Assets.xcassets in Resources */,
 				87705F07213992400064042D /* Main.storyboard in Resources */,
 			);
@@ -135,8 +183,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87705F04213992400064042D /* ViewController.swift in Sources */,
+				8716FF3F2139A34000A1559F /* Item+Convenience.swift in Sources */,
+				8716FF372139964F00A1559F /* CoreDataStack.swift in Sources */,
 				87705F02213992400064042D /* AppDelegate.swift in Sources */,
+				8716FF35213995DF00A1559F /* ShoppingList.xcdatamodeld in Sources */,
+				8716FF302139942900A1559F /* ListTableViewController.swift in Sources */,
+				8716FF322139959300A1559F /* ListItemTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74SYWHWN72;
-				INFOPLIST_FILE = ShoppingList/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ShoppingList/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 74SYWHWN72;
-				INFOPLIST_FILE = ShoppingList/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/ShoppingList/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,6 +386,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8716FF33213995DF00A1559F /* ShoppingList.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8716FF34213995DF00A1559F /* ShoppingList.xcdatamodel */,
+			);
+			currentVersion = 8716FF34213995DF00A1559F /* ShoppingList.xcdatamodel */;
+			path = ShoppingList.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 87705EF6213992400064042D /* Project object */;
 }
